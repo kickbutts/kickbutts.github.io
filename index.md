@@ -7,3 +7,5 @@ Quelle: [semohr/risikogebiete](https://github.com/semohr/risikogebiete_deutschla
 
 [Impfquote in Münster aufgeschlüsselt nach Altersgruppen](ImpfQuoteMuenster.html)  
 Quelle: Robert Koch-Institut (2021): COVID-19-Impfungen in Deutschland, Berlin: Zenodo. [DOI:10.5281/zenodo.5126652](http://doi.org/10.5281/zenodo.5126652).
+
+[Animation Impfquote Münster](ImpfQuoteMuenster.gif)
