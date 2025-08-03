@@ -2,7 +2,8 @@
 
 #Preußen Münster
 
-[Shotmaps Preußen Münster Saison 2024/25](shotmaps/Shotmap2425.html)  
+[Shotmaps Preußen Münster Saison 2024/25](shotmaps2425/Shotmap2425.html)  
+[Shotmaps Preußen Münster Saison 2025/26](shotmaps2526/Shotmap2526.html)  
 
 #Covid 19
 
