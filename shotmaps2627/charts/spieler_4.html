@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "axis": {"domainColor": "#bbb", "gridColor": "#e6e9ef", "labelColor": "#444", "tickColor": "#bbb", "titleColor": "#444"}, "background": "white", "legend": {"labelColor": "#444", "titleColor": "#444"}, "title": {"anchor": "start", "color": "#222", "fontSize": 15}}, "data": {"name": "data-4a97cfabfaa70ad4156989ea9931c78a"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "koerperteil", "scale": {"scheme": "tableau10"}, "title": null, "type": "nominal"}, "tooltip": [{"field": "spieler", "type": "nominal"}, {"field": "koerperteil", "type": "nominal"}, {"field": "schuesse", "type": "quantitative"}, {"field": "tore", "type": "quantitative"}, {"field": "xg", "format": ".2f", "type": "quantitative"}], "x": {"field": "xg", "title": "xG", "type": "quantitative"}, "y": {"field": "spieler", "sort": ["Felix Higl", "Montell Ndikom", "Marvin Schulz", "Samuel Althaus", "Joshua Mees", "Charalampos Makridis", "Ryan Johansson", "Wesley Adeh", "Torge Paetow", "Niklas Varelmann", "Antonio Tikvi\u0107", "Lucas Zeller", "Louis Kolbe"], "title": null, "type": "nominal"}}, "height": 400, "title": "xG nach K\u00f6rperteil", "width": 480, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-4a97cfabfaa70ad4156989ea9931c78a": [{"spieler": "Antonio Tikvi\u0107", "koerperteil": "Linker Fu\u00df", "xg": 0.296141, "schuesse": 3, "tore": 1}, {"spieler": "Charalampos Makridis", "koerperteil": "Kopf", "xg": 0.3999, "schuesse": 1, "tore": 1}, {"spieler": "Charalampos Makridis", "koerperteil": "Linker Fu\u00df", "xg": 0.27393, "schuesse": 3, "tore": 0}, {"spieler": "Charalampos Makridis", "koerperteil": "Rechter Fu\u00df", "xg": 0.244848, "schuesse": 4, "tore": 0}, {"spieler": "Felix Higl", "koerperteil": "Kopf", "xg": 0.275, "schuesse": 1, "tore": 1}, {"spieler": "Felix Higl", "koerperteil": "Linker Fu\u00df", "xg": 0.74124, "schuesse": 7, "tore": 0}, {"spieler": "Felix Higl", "koerperteil": "Rechter Fu\u00df", "xg": 1.626, "schuesse": 6, "tore": 3}, {"spieler": "Joshua Mees", "koerperteil": "Kopf", "xg": 0.307, "schuesse": 2, "tore": 1}, {"spieler": "Joshua Mees", "koerperteil": "Linker Fu\u00df", "xg": 0.5348999999999999, "schuesse": 3, "tore": 0}, {"spieler": "Joshua Mees", "koerperteil": "Rechter Fu\u00df", "xg": 0.1056, "schuesse": 1, "tore": 0}, {"spieler": "Louis Kolbe", "koerperteil": "Kopf", "xg": 0.06308, "schuesse": 1, "tore": 0}, {"spieler": "Louis Kolbe", "koerperteil": "Linker Fu\u00df", "xg": 0.031994, "schuesse": 2, "tore": 0}, {"spieler": "Louis Kolbe", "koerperteil": "Rechter Fu\u00df", "xg": 0.02894, "schuesse": 3, "tore": 0}, {"spieler": "Lucas Zeller", "koerperteil": "Kopf", "xg": 0.28036999999999995, "schuesse": 4, "tore": 2}, {"spieler": "Lucas Zeller", "koerperteil": "Rechter Fu\u00df", "xg": 0.00449, "schuesse": 1, "tore": 0}, {"spieler": "Marvin Schulz", "koerperteil": "Kopf", "xg": 0.239, "schuesse": 1, "tore": 0}, {"spieler": "Marvin Schulz", "koerperteil": "Linker Fu\u00df", "xg": 0.2967, "schuesse": 2, "tore": 1}, {"spieler": "Marvin Schulz", "koerperteil": "Rechter Fu\u00df", "xg": 1.27772, "schuesse": 6, "tore": 2}, {"spieler": "Montell Ndikom", "koerperteil": "Linker Fu\u00df", "xg": 1.5844794, "schuesse": 12, "tore": 3}, {"spieler": "Montell Ndikom", "koerperteil": "Rechter Fu\u00df", "xg": 0.8459, "schuesse": 1, "tore": 1}, {"spieler": "Niklas Varelmann", "koerperteil": "Kopf", "xg": 0.01047, "schuesse": 1, "tore": 0}, {"spieler": "Niklas Varelmann", "koerperteil": "Linker Fu\u00df", "xg": 0.27096, "schuesse": 2, "tore": 0}, {"spieler": "Niklas Varelmann", "koerperteil": "Rechter Fu\u00df", "xg": 0.0166, "schuesse": 1, "tore": 0}, {"spieler": "Ryan Johansson", "koerperteil": "Linker Fu\u00df", "xg": 0.3004, "schuesse": 2, "tore": 0}, {"spieler": "Ryan Johansson", "koerperteil": "Rechter Fu\u00df", "xg": 0.3602699, "schuesse": 9, "tore": 1}, {"spieler": "Samuel Althaus", "koerperteil": "Linker Fu\u00df", "xg": 0.1689, "schuesse": 1, "tore": 0}, {"spieler": "Samuel Althaus", "koerperteil": "Rechter Fu\u00df", "xg": 0.7838999999999999, "schuesse": 2, "tore": 0}, {"spieler": "Torge Paetow", "koerperteil": "Kopf", "xg": 0.4198, "schuesse": 3, "tore": 0}, {"spieler": "Torge Paetow", "koerperteil": "Linker Fu\u00df", "xg": 0.02875, "schuesse": 1, "tore": 0}, {"spieler": "Torge Paetow", "koerperteil": "Rechter Fu\u00df", "xg": 0.004122, "schuesse": 2, "tore": 0}, {"spieler": "Wesley Adeh", "koerperteil": "Kopf", "xg": 0.3628, "schuesse": 2, "tore": 0}, {"spieler": "Wesley Adeh", "koerperteil": "Rechter Fu\u00df", "xg": 0.15147, "schuesse": 2, "tore": 0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

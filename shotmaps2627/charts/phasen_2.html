@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "axis": {"domainColor": "#bbb", "gridColor": "#e6e9ef", "labelColor": "#444", "tickColor": "#bbb", "titleColor": "#444"}, "background": "white", "legend": {"labelColor": "#444", "titleColor": "#444"}, "title": {"anchor": "start", "color": "#222", "fontSize": 15}}, "layer": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "seite", "scale": {"domain": ["M\u00fcnster", "Gegner"], "range": ["#1a7f37", "#d9534f"]}, "title": null, "type": "nominal"}, "tooltip": [{"field": "block", "type": "nominal"}, {"field": "seite", "type": "nominal"}, {"field": "schuesse", "type": "quantitative"}, {"field": "tore", "format": ".0f", "type": "quantitative"}, {"field": "xg", "format": ".2f", "type": "quantitative"}, {"field": "xg_pro_spiel", "format": ".2f", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0}, "field": "block", "sort": ["1-15", "16-30", "31-45", "46-60", "61-75", "76-90"], "title": null, "type": "nominal"}, "xOffset": {"field": "seite", "sort": ["M\u00fcnster", "Gegner"], "type": "nominal"}, "y": {"field": "tore", "title": "Tore nach Spielphase (gesamt)", "type": "quantitative"}}}, {"mark": {"type": "text", "color": "#333333", "dy": -6, "fontSize": 11}, "encoding": {"color": {"field": "seite", "scale": {"domain": ["M\u00fcnster", "Gegner"], "range": ["#1a7f37", "#d9534f"]}, "title": null, "type": "nominal"}, "text": {"field": "tore", "format": ".0f", "type": "quantitative"}, "tooltip": [{"field": "block", "type": "nominal"}, {"field": "seite", "type": "nominal"}, {"field": "schuesse", "type": "quantitative"}, {"field": "tore", "format": ".0f", "type": "quantitative"}, {"field": "xg", "format": ".2f", "type": "quantitative"}, {"field": "xg_pro_spiel", "format": ".2f", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0}, "field": "block", "sort": ["1-15", "16-30", "31-45", "46-60", "61-75", "76-90"], "title": null, "type": "nominal"}, "xOffset": {"field": "seite", "sort": ["M\u00fcnster", "Gegner"], "type": "nominal"}, "y": {"field": "tore", "title": "Tore nach Spielphase (gesamt)", "type": "quantitative"}}}], "data": {"name": "data-1a70379222015a4c35c456f0056ad00c"}, "height": 320, "title": "Tore nach Spielphase (gesamt)", "width": 520, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-1a70379222015a4c35c456f0056ad00c": [{"block": "1-15", "seite": "M\u00fcnster", "schuesse": 14.0, "xg": 1.73503, "tore": 2.0, "xg_pro_spiel": 0.17350300000000002}, {"block": "1-15", "seite": "Gegner", "schuesse": 18.0, "xg": 2.397449, "tore": 5.0, "xg_pro_spiel": 0.23974489999999998}, {"block": "16-30", "seite": "M\u00fcnster", "schuesse": 17.0, "xg": 2.790823, "tore": 6.0, "xg_pro_spiel": 0.2790823}, {"block": "16-30", "seite": "Gegner", "schuesse": 17.0, "xg": 1.53695, "tore": 3.0, "xg_pro_spiel": 0.153695}, {"block": "31-45", "seite": "M\u00fcnster", "schuesse": 21.0, "xg": 2.4753261, "tore": 1.0, "xg_pro_spiel": 0.24753261000000001}, {"block": "31-45", "seite": "Gegner", "schuesse": 22.0, "xg": 2.621241, "tore": 4.0, "xg_pro_spiel": 0.26212409999999997}, {"block": "46-60", "seite": "M\u00fcnster", "schuesse": 13.0, "xg": 1.32212, "tore": 2.0, "xg_pro_spiel": 0.132212}, {"block": "46-60", "seite": "Gegner", "schuesse": 11.0, "xg": 0.6938840000000001, "tore": 1.0, "xg_pro_spiel": 0.0693884}, {"block": "61-75", "seite": "M\u00fcnster", "schuesse": 17.0, "xg": 2.0745348, "tore": 2.0, "xg_pro_spiel": 0.20745348}, {"block": "61-75", "seite": "Gegner", "schuesse": 18.0, "xg": 3.606901, "tore": 3.0, "xg_pro_spiel": 0.3606901}, {"block": "76-90", "seite": "M\u00fcnster", "schuesse": 17.0, "xg": 2.5798264, "tore": 4.0, "xg_pro_spiel": 0.25798264}, {"block": "76-90", "seite": "Gegner", "schuesse": 33.0, "xg": 5.326836, "tore": 6.0, "xg_pro_spiel": 0.5326836}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

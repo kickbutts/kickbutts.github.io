@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "axis": {"domainColor": "#bbb", "gridColor": "#e6e9ef", "labelColor": "#444", "tickColor": "#bbb", "titleColor": "#444"}, "background": "white", "legend": {"labelColor": "#444", "titleColor": "#444"}, "title": {"anchor": "start", "color": "#222", "fontSize": 15}}, "layer": [{"mark": {"type": "bar"}, "encoding": {"color": {"field": "seite", "scale": {"domain": ["M\u00fcnster", "Gegner"], "range": ["#1a7f37", "#d9534f"]}, "title": null, "type": "nominal"}, "tooltip": [{"field": "zustand", "type": "nominal"}, {"field": "seite", "type": "nominal"}, {"field": "minuten", "format": ".0f", "type": "quantitative"}, {"field": "schuesse", "format": ".0f", "type": "quantitative"}, {"field": "xg", "format": ".2f", "type": "quantitative"}, {"field": "xg_90", "format": ".2f", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0}, "field": "zustand", "sort": ["R\u00fcckstand 2+", "R\u00fcckstand 1", "Gleichstand", "F\u00fchrung 1"], "title": null, "type": "nominal"}, "xOffset": {"field": "seite", "sort": ["M\u00fcnster", "Gegner"], "type": "nominal"}, "y": {"field": "xg_90", "title": "xG pro 90 Min. je Spielstand", "type": "quantitative"}}}, {"mark": {"type": "text", "color": "#333333", "dy": -6, "fontSize": 11}, "encoding": {"color": {"field": "seite", "scale": {"domain": ["M\u00fcnster", "Gegner"], "range": ["#1a7f37", "#d9534f"]}, "title": null, "type": "nominal"}, "text": {"field": "xg_90", "format": ".2f", "type": "quantitative"}, "tooltip": [{"field": "zustand", "type": "nominal"}, {"field": "seite", "type": "nominal"}, {"field": "minuten", "format": ".0f", "type": "quantitative"}, {"field": "schuesse", "format": ".0f", "type": "quantitative"}, {"field": "xg", "format": ".2f", "type": "quantitative"}, {"field": "xg_90", "format": ".2f", "type": "quantitative"}], "x": {"axis": {"labelAngle": 0}, "field": "zustand", "sort": ["R\u00fcckstand 2+", "R\u00fcckstand 1", "Gleichstand", "F\u00fchrung 1"], "title": null, "type": "nominal"}, "xOffset": {"field": "seite", "sort": ["M\u00fcnster", "Gegner"], "type": "nominal"}, "y": {"field": "xg_90", "title": "xG pro 90 Min. je Spielstand", "type": "quantitative"}}}], "data": {"name": "data-73e94b0a1b0e5dbbed6b27c7f369cf86"}, "height": 320, "title": "xG pro 90 Min. je Spielstand", "width": 520, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-73e94b0a1b0e5dbbed6b27c7f369cf86": [{"zustand": "R\u00fcckstand 2+", "seite": "M\u00fcnster", "schuesse": 16, "xg": 1.7556784, "tore": 3, "minuten": 88.0, "xg_90": 1.7955801818181818, "schuesse_90": 16.363636363636363}, {"zustand": "R\u00fcckstand 2+", "seite": "Gegner", "schuesse": 6, "xg": 1.21318, "tore": 1, "minuten": 88.0, "xg_90": 1.2407522727272726, "schuesse_90": 6.136363636363636}, {"zustand": "R\u00fcckstand 1", "seite": "M\u00fcnster", "schuesse": 18, "xg": 1.76037, "tore": 3, "minuten": 153.0, "xg_90": 1.0355117647058822, "schuesse_90": 10.588235294117647}, {"zustand": "R\u00fcckstand 1", "seite": "Gegner", "schuesse": 21, "xg": 2.100543, "tore": 5, "minuten": 153.0, "xg_90": 1.2356135294117647, "schuesse_90": 12.352941176470589}, {"zustand": "Gleichstand", "seite": "M\u00fcnster", "schuesse": 43, "xg": 6.6321949, "tore": 9, "minuten": 460.0, "xg_90": 1.2976033500000002, "schuesse_90": 8.41304347826087}, {"zustand": "Gleichstand", "seite": "Gegner", "schuesse": 64, "xg": 8.687064, "tore": 7, "minuten": 460.0, "xg_90": 1.699642956521739, "schuesse_90": 12.521739130434783}, {"zustand": "F\u00fchrung 1", "seite": "M\u00fcnster", "schuesse": 18, "xg": 2.638847, "tore": 2, "minuten": 161.0, "xg_90": 1.4751318633540373, "schuesse_90": 10.062111801242237}, {"zustand": "F\u00fchrung 1", "seite": "Gegner", "schuesse": 20, "xg": 3.3973500000000003, "tore": 7, "minuten": 161.0, "xg_90": 1.8991397515527952, "schuesse_90": 11.180124223602485}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

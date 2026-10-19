@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "axis": {"domainColor": "#bbb", "gridColor": "#e6e9ef", "labelColor": "#444", "tickColor": "#bbb", "titleColor": "#444"}, "background": "white", "legend": {"labelColor": "#444", "titleColor": "#444"}, "title": {"anchor": "start", "color": "#222", "fontSize": 15}}, "data": {"name": "data-2668de70dbd9cd79640e0fb7ba5aca56"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "situation_de", "scale": {"scheme": "tableau10"}, "title": null, "type": "nominal"}, "tooltip": [{"field": "spieler", "type": "nominal"}, {"field": "situation_de", "type": "nominal"}, {"field": "schuesse", "type": "quantitative"}, {"field": "tore", "type": "quantitative"}, {"field": "xg", "format": ".2f", "type": "quantitative"}], "x": {"field": "xg", "title": "xG", "type": "quantitative"}, "y": {"field": "spieler", "sort": ["Felix Higl", "Montell Ndikom", "Marvin Schulz", "Samuel Althaus", "Joshua Mees", "Charalampos Makridis", "Ryan Johansson", "Wesley Adeh", "Torge Paetow", "Niklas Varelmann", "Antonio Tikvi\u0107", "Lucas Zeller", "Louis Kolbe"], "title": null, "type": "nominal"}}, "height": 400, "title": "xG nach Spielsituation", "width": 480, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-2668de70dbd9cd79640e0fb7ba5aca56": [{"spieler": "Antonio Tikvi\u0107", "situation_de": "Einwurf", "xg": 0.2764, "schuesse": 1, "tore": 0}, {"spieler": "Antonio Tikvi\u0107", "situation_de": "Freisto\u00df", "xg": 0.001301, "schuesse": 1, "tore": 0}, {"spieler": "Antonio Tikvi\u0107", "situation_de": "Spiel", "xg": 0.01844, "schuesse": 1, "tore": 1}, {"spieler": "Charalampos Makridis", "situation_de": "Ecke", "xg": 0.1198, "schuesse": 1, "tore": 0}, {"spieler": "Charalampos Makridis", "situation_de": "Einwurf", "xg": 0.1433, "schuesse": 1, "tore": 0}, {"spieler": "Charalampos Makridis", "situation_de": "Spiel", "xg": 0.651, "schuesse": 5, "tore": 1}, {"spieler": "Charalampos Makridis", "situation_de": "Standard", "xg": 0.004578, "schuesse": 1, "tore": 0}, {"spieler": "Felix Higl", "situation_de": "Einwurf", "xg": 0.12632, "schuesse": 2, "tore": 0}, {"spieler": "Felix Higl", "situation_de": "Spiel", "xg": 1.72092, "schuesse": 11, "tore": 3}, {"spieler": "Felix Higl", "situation_de": "Standard", "xg": 0.795, "schuesse": 1, "tore": 1}, {"spieler": "Joshua Mees", "situation_de": "Einwurf", "xg": 0.1653, "schuesse": 1, "tore": 1}, {"spieler": "Joshua Mees", "situation_de": "Freisto\u00df", "xg": 0.1056, "schuesse": 1, "tore": 0}, {"spieler": "Joshua Mees", "situation_de": "Spiel", "xg": 0.6766, "schuesse": 4, "tore": 0}, {"spieler": "Louis Kolbe", "situation_de": "Ecke", "xg": 0.01029, "schuesse": 1, "tore": 0}, {"spieler": "Louis Kolbe", "situation_de": "Einwurf", "xg": 0.005614, "schuesse": 1, "tore": 0}, {"spieler": "Louis Kolbe", "situation_de": "Spiel", "xg": 0.10811, "schuesse": 4, "tore": 0}, {"spieler": "Lucas Zeller", "situation_de": "Einwurf", "xg": 0.00807, "schuesse": 2, "tore": 0}, {"spieler": "Lucas Zeller", "situation_de": "Standard", "xg": 0.27679, "schuesse": 3, "tore": 2}, {"spieler": "Marvin Schulz", "situation_de": "Einwurf", "xg": 1.04952, "schuesse": 4, "tore": 2}, {"spieler": "Marvin Schulz", "situation_de": "Spiel", "xg": 0.7639, "schuesse": 5, "tore": 1}, {"spieler": "Montell Ndikom", "situation_de": "Einwurf", "xg": 0.015311, "schuesse": 2, "tore": 1}, {"spieler": "Montell Ndikom", "situation_de": "Elfmeter", "xg": 0.76, "schuesse": 1, "tore": 1}, {"spieler": "Montell Ndikom", "situation_de": "Freisto\u00df", "xg": 0.0008384, "schuesse": 1, "tore": 0}, {"spieler": "Montell Ndikom", "situation_de": "Spiel", "xg": 1.65423, "schuesse": 9, "tore": 2}, {"spieler": "Niklas Varelmann", "situation_de": "Ecke", "xg": 0.01546, "schuesse": 1, "tore": 0}, {"spieler": "Niklas Varelmann", "situation_de": "Einwurf", "xg": 0.01047, "schuesse": 1, "tore": 0}, {"spieler": "Niklas Varelmann", "situation_de": "Spiel", "xg": 0.2721, "schuesse": 2, "tore": 0}, {"spieler": "Ryan Johansson", "situation_de": "Einwurf", "xg": 0.138937, "schuesse": 3, "tore": 0}, {"spieler": "Ryan Johansson", "situation_de": "Freisto\u00df", "xg": 0.0015149, "schuesse": 2, "tore": 0}, {"spieler": "Ryan Johansson", "situation_de": "Spiel", "xg": 0.520218, "schuesse": 6, "tore": 1}, {"spieler": "Samuel Althaus", "situation_de": "Einwurf", "xg": 0.6163, "schuesse": 1, "tore": 0}, {"spieler": "Samuel Althaus", "situation_de": "Spiel", "xg": 0.1689, "schuesse": 1, "tore": 0}, {"spieler": "Samuel Althaus", "situation_de": "Standard", "xg": 0.1676, "schuesse": 1, "tore": 0}, {"spieler": "Torge Paetow", "situation_de": "Ecke", "xg": 0.0166, "schuesse": 1, "tore": 0}, {"spieler": "Torge Paetow", "situation_de": "Einwurf", "xg": 0.032872, "schuesse": 3, "tore": 0}, {"spieler": "Torge Paetow", "situation_de": "Standard", "xg": 0.4032, "schuesse": 2, "tore": 0}, {"spieler": "Wesley Adeh", "situation_de": "Ecke", "xg": 0.3628, "schuesse": 2, "tore": 0}, {"spieler": "Wesley Adeh", "situation_de": "Spiel", "xg": 0.15147, "schuesse": 2, "tore": 0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
